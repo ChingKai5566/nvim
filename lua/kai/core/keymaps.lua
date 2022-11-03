@@ -33,7 +33,7 @@ keymap.set("n", "<M-k>", ":m .-2<CR>==")
 
 keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
-keymap.set("n", "<leader>c", ":bd<CR>")
+keymap.set("n", "<leader>c", ":bw<CR>")
 
 ----------------------
 -- Plugin Keybinds
