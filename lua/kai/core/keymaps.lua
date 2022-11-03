@@ -31,6 +31,11 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<S-l>", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<S-h>", ":tabp<CR>") --  go to previous tab
 
+keymap.set("i", "<M-j>", "<Esc>:m .+1<CR>==gi")
+keymap.set("i", "<M-k>", "<Esc>:m .-2<CR>==gi")
+keymap.set("n", "<M-j>", ":m .+1<CR>==")
+keymap.set("n", "<M-k>", ":m .-2<CR>==")
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
