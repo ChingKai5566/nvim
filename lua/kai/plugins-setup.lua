@@ -78,6 +78,10 @@ return require('packer').startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
   -- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  -- buffertabs
+  use("tiagovla/scope.nvim")
+  use{"akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons"}
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -26,15 +26,14 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<S-l>", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<S-h>", ":tabp<CR>") --  go to previous tab
-
 keymap.set("i", "<M-j>", "<Esc>:m .+1<CR>==gi")
 keymap.set("i", "<M-k>", "<Esc>:m .-2<CR>==gi")
 keymap.set("n", "<M-j>", ":m .+1<CR>==")
 keymap.set("n", "<M-k>", ":m .-2<CR>==")
+
+keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>")
+keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
+keymap.set("n", "<leader>c", ":bd<CR>")
 
 ----------------------
 -- Plugin Keybinds
