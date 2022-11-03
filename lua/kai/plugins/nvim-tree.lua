@@ -34,4 +34,5 @@ nvimtree.setup({
 			},
 		},
 	},
+  quit_on_open = 0
 })
