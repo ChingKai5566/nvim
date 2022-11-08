@@ -9,10 +9,13 @@ local formatting  = null_ls.builtins.formatting -- to setup formatters
 local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 
 null_ls.setup({
-  source = {
+  sources = {
     --  to disable file types use
     --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
     formatting.prettier, -- js/ts formatter
+    formatting.beautysh.with({
+      command = "beautysh"
+    }),
     formatting.stylua, -- lua formatter
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
@@ -21,4 +24,5 @@ null_ls.setup({
       end,
     }),
   },
+  debug = true
 })
