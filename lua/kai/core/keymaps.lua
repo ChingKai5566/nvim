@@ -35,6 +35,10 @@ keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>")
 keymap.set("n", "<leader>c", ":bw<CR>")
 
+-- delete without copy
+keymap.set("n", "d", '"_d')
+keymap.set("v", "d", '"_d')
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
