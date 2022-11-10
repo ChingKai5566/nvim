@@ -39,6 +39,12 @@ keymap.set("n", "<leader>c", ":bw<CR>")
 keymap.set("n", "d", '"_d')
 keymap.set("v", "d", '"_d')
 
+-- Resize with arrows
+keymap.set("n", "<C-Up>", ":resize -2<CR>")
+keymap.set("n", "<C-Down>", ":resize +2<CR>")
+keymap.set("n", "<C-n>", ":vertical resize +2<CR>")
+keymap.set("n", "<C-m>", ":vertical resize -2<CR>")
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
